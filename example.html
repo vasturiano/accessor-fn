@@ -1,5 +1,4 @@
-<!--<script src="//unpkg.com/accessor-fn"></script>-->
-<script src="./dist/accessor.js"></script>
+<script src="//unpkg.com/accessor-fn"></script>
 <script>
     const obj = {
         a: 1,
@@ -11,4 +10,7 @@
 
     const sumFn = accessorFn(d => d.a + d.b);
     console.log(sumFn(obj)); // 3
+
+    const constantFn = accessorFn(7);
+    console.log(constantFn(obj)); // 7
 </script>

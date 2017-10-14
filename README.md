@@ -1,6 +1,6 @@
 # Accessor function
 
-A wrapper for property accessors supporting functions or strings.
+A wrapper for property accessors supporting functions, property strings or constant values.
 
 [![NPM](https://nodei.co/npm/accessor-fn.png?compact=true)](https://nodei.co/npm/accessor-fn/)
 
@@ -35,4 +35,7 @@ aFn(obj); // 1
 
 var sumFn = accessorFn(d => d.a + d.b);
 sumFn(obj); // 3
+
+var constantFn = accessorFn(7);
+constantFn(obj); // 7
 ```

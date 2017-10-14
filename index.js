@@ -1,1 +1,5 @@
-export default p => p instanceof Function ? p : obj => obj[p];
+export default p => p instanceof Function
+    ? p                     // fn
+    : typeof p === 'string'
+        ? obj => obj[p]     // property name
+        : obj => p;         // constant
