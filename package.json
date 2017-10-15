@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "description": "A wrapper function for object accessor properties",
   "main": "dist/accessor.min.js",
-  "jsnext:main": "index",
+  "module": "index",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vasturiano/accessor-fn.git"
