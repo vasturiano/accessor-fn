@@ -1,8 +1,11 @@
-# Accessor function
+Accessor function
+==============
+
+[![NPM package][npm-img]][npm-url]
+[![Build Size][build-size-img]][build-size-url]
+[![Dependencies][dependencies-img]][dependencies-url]
 
 A wrapper for property accessors supporting functions, property strings or constant values.
-
-[![NPM](https://nodei.co/npm/accessor-fn.png?compact=true)](https://nodei.co/npm/accessor-fn/)
 
 ## Quick start
 
@@ -39,3 +42,11 @@ sumFn(obj); // 3
 var constantFn = accessorFn(7);
 constantFn(obj); // 7
 ```
+
+
+[npm-img]: https://img.shields.io/npm/v/accessor-fn.svg
+[npm-url]: https://npmjs.org/package/accessor-fn
+[build-size-img]: https://img.shields.io/bundlephobia/minzip/accessor-fn.svg
+[build-size-url]: https://bundlephobia.com/result?p=accessor-fn
+[dependencies-img]: https://img.shields.io/david/vasturiano/accessor-fn.svg
+[dependencies-url]: https://david-dm.org/vasturiano/accessor-fn
