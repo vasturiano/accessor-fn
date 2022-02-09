@@ -1,6 +1,6 @@
 {
   "name": "accessor-fn",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "A wrapper function for object accessor properties",
   "unpkg": "dist/accessor-fn.min.js",
   "main": "dist/accessor-fn.common.js",
