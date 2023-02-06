@@ -12,11 +12,7 @@ A wrapper for property accessors supporting functions, property strings or const
 ```js
 import accessorFn from 'accessor-fn';
 ```
-or
-```js
-const accessorFn = require('accessor-fn');
-```
-or even
+or using a *script* tag
 ```html
 <script src="//unpkg.com/accessor-fn"></script>
 ```
