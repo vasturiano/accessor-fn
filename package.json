@@ -8,9 +8,9 @@
   "module": "dist/accessor-fn.mjs",
   "types": "dist/accessor-fn.d.ts",
   "exports": {
+    "types": "./dist/accessor-fn.d.ts",
     "umd": "./dist/accessor-fn.min.js",
-    "default": "./dist/accessor-fn.mjs",
-    "types": "./dist/accessor-fn.d.ts"
+    "default": "./dist/accessor-fn.mjs"
   },
   "repository": {
     "type": "git",
