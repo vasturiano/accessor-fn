@@ -3,14 +3,14 @@
   "version": "1.5.1",
   "description": "A wrapper function for object accessor properties",
   "type": "module",
-  "unpkg": "dist/accessor-fn.min.js",
-  "main": "dist/accessor-fn.mjs",
-  "module": "dist/accessor-fn.mjs",
-  "types": "dist/accessor-fn.d.ts",
+  "unpkg": "dist/accessor-fn.js",
+  "main": "dist/accessor-fn.js",
+  "module": "dist/accessor-fn.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    "types": "./dist/accessor-fn.d.ts",
-    "umd": "./dist/accessor-fn.min.js",
-    "default": "./dist/accessor-fn.mjs"
+    "types": "./dist/index.d.ts",
+    "umd": "./dist/accessor-fn.min.umd.cjs",
+    "default": "./dist/accessor-fn.js"
   },
   "repository": {
     "type": "git",
@@ -32,27 +32,22 @@
   },
   "homepage": "https://github.com/vasturiano/accessor-fn",
   "scripts": {
-    "build": "rimraf dist && rollup -c",
-    "dev": "rollup -w -c",
+    "build": "vite build",
+    "dev": "vite dev",
+    "test": "vitest",
     "prepare": "npm run build"
   },
   "files": [
     "dist/**/*"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.24.9",
-    "@babel/preset-env": "^7.24.8",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "rimraf": "^6.0.1",
-    "rollup": "^4.18.1",
-    "rollup-plugin-dts": "^6.1.1",
-    "typescript": "^5.5.3"
+    "@types/node": "^20.14.11",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "^4.0.0-beta.1",
+    "vitest": "^2.0.3"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=20"
   }
 }
