@@ -14,7 +14,7 @@ import accessorFn from 'accessor-fn';
 ```
 or using a *script* tag
 ```html
-<script src="//unpkg.com/accessor-fn"></script>
+<script src="//cdn.jsdelivr.net/npm/accessor-fn"></script>
 ```
 
 ## Usage example
